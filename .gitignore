@@ -1,0 +1,56 @@
+# IntelliJ IDEA project files
+*.iml
+.idea/
+.gradle/
+local.properties
+.DS_Store
+
+# Built application files
+/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log and debugging files
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android Studio specific files
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/vcs.xml
+
+# Gradle specific files
+.gradle/
+build/
+
+# Intermediates
+/build/
+/app/build/
+/app/build/intermediates/
+
+# Kotlin specific files
+*.class
+*.jar
+*.war
+*.ear
+
+# Generated files
+generated/
+
+# External native build
+.externalNativeBuild
+.cxx
+
+# JetBrains specific files
+*.iws
+*.ipr
+*.iws
+
+# Miscellaneous
+/.DS_Store

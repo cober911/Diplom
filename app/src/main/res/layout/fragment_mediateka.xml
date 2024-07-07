@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/settings_background"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/layouts_padding"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".media.ui.fragments.MediaFragment">
+
+    <LinearLayout
+        android:paddingHorizontal="@dimen/common_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/settings_text_view"
+            android:text="@string/media"
+            android:textSize="@dimen/main_text_size"
+            android:fontFamily="@font/ys_display_medium" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/common_padding"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="?attr/colorPrimary"
+        style="@style/MediaCustomTabLayout"
+        app:tabIndicatorColor="?attr/colorOnSecondary"
+        app:tabTextColor="?attr/colorOnSecondary" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:paddingHorizontal="8dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
